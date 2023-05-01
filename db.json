@@ -1,0 +1,111 @@
+{
+  "nacionalidades": [
+    {
+      "id": 1,
+      "descricao": "Brasileiro (a)"
+    },
+    {
+      "id": 2,
+      "descricao": "Inglês"
+    },
+    {
+      "id": 3,
+      "descricao": "Estadunidense"
+    }
+  ],
+  "autores": [
+    {
+      "nome": "Martin Fowler",
+      "genero": "M",
+      "dataNascimento": "1963-12-18",
+      "biografia": "Biografia do autor",
+      "nacionalidade": {
+        "id": 3,
+        "descricao": "Estadunidense"
+      },
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Robert C. Martin",
+      "dataNascimento": "1964-12-18",
+      "genero": "M"
+    },
+    {
+      "id": 3,
+      "nome": "Eric Evans",
+      "dataNascimento": "1965-12-18",
+      "genero": "M"
+    },
+    {
+      "nome": "Douglas Cockford",
+      "genero": "M",
+      "dataNascimento": "1966-12-18",
+      "biografia": "12312",
+      "nacionalidade": {
+        "id": 1,
+        "descricao": "Brasileiro (a)"
+      },
+      "id": 4
+    },
+    {
+      "nome": "Nome qualquer",
+      "genero": "F",
+      "dataNascimento": "1970-01-01",
+      "biografia": "Biografia qualquer",
+      "nacionalidade": {
+        "id": 2,
+        "descricao": "Inglês"
+      },
+      "id": 5
+    }
+  ],
+  "livros": [
+    {
+      "id": 1,
+      "nome": "JavaScript: O guia definitivo",
+      "autor": "David Flanagan",
+      "publicacao": "2020-04-03",
+      "preco": 10.5
+    },
+    {
+      "id": 2,
+      "nome": "O melhor do JavaScript",
+      "autor": "Douglas Cockford",
+      "publicacao": "2020-04-04"
+    },
+    {
+      "id": 3,
+      "nome": "JavaScript Design Patterns",
+      "autor": "Addy Osmani",
+      "preco": 27.99
+    },
+    {
+      "id": 4,
+      "nome": "O código limpo",
+      "autor": "Robert Martin",
+      "preco": "10.99"
+    },
+    {
+      "nome": "Domain-Driven Design",
+      "autor": "Eric Evans",
+      "preco": 454.08,
+      "publicacao": "2000-01-01",
+      "id": 5
+    },
+    {
+      "nome": "The Pragmatic Programmer",
+      "autor": "Andrew Hunt",
+      "preco": "381.99",
+      "publicacao": "2000-01-01",
+      "id": 6
+    },
+    {
+      "nome": "The Pragmatic Programmer",
+      "autor": "Andrew Hunt",
+      "preco": "381.99",
+      "publicacao": "2000-01-01",
+      "id": 7
+    }
+  ]
+}
