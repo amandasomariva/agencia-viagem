@@ -81,7 +81,6 @@
       "preco": 27.99
     },
     {
-      "id": 4,
       "nome": "O código limpo",
       "autor": "Robert Martin",
       "preco": "10.99"
@@ -106,6 +105,82 @@
       "preco": "381.99",
       "publicacao": "2000-01-01",
       "id": 7
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Nome teste nome",
+      "genero": "F",
+      "dataNascimento": "1970-01-01",
+      "cpf": "11111111111",
+      "telefone": "48996702055"
+    },
+    {
+      "nome": "João",
+      "genero": "M",
+      "dataNascimento": "1970-01-01",
+      "biografia": "Biografia qualquer",
+      "cpf": "11111111111",
+      "telefone": "11111111",
+      "id": 2
+    }
+  ],
+  "passagens": [
+    {
+      "tipo": "economica",
+      "dataIda": "2023-06-30",
+      "dataVolta": "2023-07-31",
+      "origem": "Criciúma",
+      "destino": "Itália",
+      "id": 1
+    },
+    {
+      "tipo": "executiva",
+      "dataIda": "2023-06-01",
+      "dataVolta": "2023-07-01",
+      "origem": "Brasil",
+      "destino": "EUA",
+      "id": 2
+    }
+  ],
+  "pacotes": [
+    {
+      "cliente": {
+        "id": 1,
+        "descricao": "João"
+      },
+      "passagem": {
+        "id": 1,
+        "destino": "destino qualquer"
+      },
+      "roteiro": "Viagem para conhecer a estátua da Julieta - Itália",
+      "valor": "1",
+      "agente": "carlos",
+      "id": 1
+    },
+    {
+      "cliente": {
+        "nome": "João",
+        "genero": "M",
+        "dataNascimento": "1970-01-01",
+        "biografia": "Biografia qualquer",
+        "cpf": "11111111111",
+        "telefone": "11111111",
+        "id": 2
+      },
+      "passagem": {
+        "tipo": "economica",
+        "dataIda": "1970-01-01",
+        "dataVolta": "1970-01-01",
+        "origem": "Criciúma",
+        "destino": "Itália",
+        "id": 1
+      },
+      "roteiro": "Viagem para passear",
+      "valor": "10.0",
+      "agente": "maria",
+      "id": 2
     }
   ]
 }
