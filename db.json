@@ -124,6 +124,15 @@
       "cpf": "11111111111",
       "telefone": "11111111",
       "id": 2
+    },
+    {
+      "nome": "Cliente teste contador",
+      "genero": "F",
+      "dataNascimento": "1970-01-01",
+      "biografia": "Biografia qualquer",
+      "cpf": "12345678890",
+      "telefone": "123434344",
+      "id": 3
     }
   ],
   "passagens": [

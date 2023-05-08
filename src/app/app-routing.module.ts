@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'resumo',
     pathMatch: 'full'
   },
   {
@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'sobre',
     loadChildren: () => import('./sobre/sobre.module').then(m => m.SobreModule)
+  },
+  {
+    path: 'resumo',
+    loadChildren: () => import('./resumo/resumo.module').then(m => m.ResumoModule)
   }
 ];
 

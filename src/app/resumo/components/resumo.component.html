@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Resumo </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+      <ion-label>
+        <section id="description">
+          <p style="text-align: center;"> <ion-icon name="people-circle"></ion-icon> <strong> Clientes cadastrados:</strong></p>
+          <p style="text-align: center;">&nbsp;</p>
+          <p style="text-align: center;"><strong>{{contador}}</strong></p>
+          <p style="text-align: center;">&nbsp;</p>
+          <p style="text-align: center;"> <ion-icon name="airplane"></ion-icon> <strong> Passagens cadastradas:</strong></p>
+          <p style="text-align: center;">&nbsp;</p>
+          <p style="text-align: center;"><strong>{{contadorPassagem}}</strong></p>
+          <p style="text-align: center;">&nbsp;</p>
+          <p style="text-align: center;"> <ion-icon name="cube"></ion-icon> <strong> Pacotes cadastrados:</strong></p>
+          <p style="text-align: center;">&nbsp;</p>
+          <p style="text-align: center;"><strong>{{contadorPacote}}</strong></p>
+          </section>
+      </ion-label>
+  </ion-list>
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+      <ion-icon name="airplane"></ion-icon>
+  </ion-fab>
+</ion-content>
+
