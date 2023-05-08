@@ -14,6 +14,7 @@ export class AppComponent {
     { title: 'Clientes Favoritos', url: '/clientes/favoritos', icon: 'heart' },
     { title: 'Passagens', url: '/passagens', icon: 'airplane' },
     { title: 'Pacotes', url: '/pacotes', icon: 'cube' },
+    { title: 'Quem somos', url: '/sobre', icon: 'archive' },
   ];
   constructor() {}
 }
