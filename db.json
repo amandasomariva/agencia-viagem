@@ -1,0 +1,218 @@
+{
+  "nacionalidades": [
+    {
+      "id": 1,
+      "descricao": "Brasileiro (a)"
+    },
+    {
+      "id": 2,
+      "descricao": "Inglês"
+    },
+    {
+      "id": 3,
+      "descricao": "Estadunidense"
+    }
+  ],
+  "autores": [
+    {
+      "nome": "Martin Fowler",
+      "genero": "M",
+      "dataNascimento": "1963-12-18",
+      "biografia": "Biografia do autor",
+      "nacionalidade": {
+        "id": 3,
+        "descricao": "Estadunidense"
+      },
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Robert C. Martin",
+      "dataNascimento": "1964-12-18",
+      "genero": "M"
+    },
+    {
+      "id": 3,
+      "nome": "Eric Evans",
+      "dataNascimento": "1965-12-18",
+      "genero": "M"
+    },
+    {
+      "nome": "Douglas Cockford",
+      "genero": "M",
+      "dataNascimento": "1966-12-18",
+      "biografia": "12312",
+      "nacionalidade": {
+        "id": 1,
+        "descricao": "Brasileiro (a)"
+      },
+      "id": 4
+    },
+    {
+      "nome": "Nome qualquer",
+      "genero": "F",
+      "dataNascimento": "1970-01-01",
+      "biografia": "Biografia qualquer",
+      "nacionalidade": {
+        "id": 2,
+        "descricao": "Inglês"
+      },
+      "id": 5
+    }
+  ],
+  "livros": [
+    {
+      "id": 1,
+      "nome": "JavaScript: O guia definitivo",
+      "autor": "David Flanagan",
+      "publicacao": "2020-04-03",
+      "preco": 10.5
+    },
+    {
+      "id": 2,
+      "nome": "O melhor do JavaScript",
+      "autor": "Douglas Cockford",
+      "publicacao": "2020-04-04"
+    },
+    {
+      "id": 3,
+      "nome": "JavaScript Design Patterns",
+      "autor": "Addy Osmani",
+      "preco": 27.99
+    },
+    {
+      "nome": "O código limpo",
+      "autor": "Robert Martin",
+      "preco": "10.99"
+    },
+    {
+      "nome": "Domain-Driven Design",
+      "autor": "Eric Evans",
+      "preco": 454.08,
+      "publicacao": "2000-01-01",
+      "id": 5
+    },
+    {
+      "nome": "The Pragmatic Programmer",
+      "autor": "Andrew Hunt",
+      "preco": "381.99",
+      "publicacao": "2000-01-01",
+      "id": 6
+    },
+    {
+      "nome": "The Pragmatic Programmer",
+      "autor": "Andrew Hunt",
+      "preco": "381.99",
+      "publicacao": "2000-01-01",
+      "id": 7
+    }
+  ],
+  "clientes": [
+    {
+      "nome": "Nome teste nome 2",
+      "genero": "F",
+      "dataNascimento": "1970-01-01",
+      "biografia": "Biografia qualquer",
+      "cpf": "11111111111",
+      "telefone": "48996702055",
+      "id": 1
+    },
+    {
+      "nome": "João",
+      "genero": "M",
+      "dataNascimento": "1970-01-01",
+      "biografia": "Biografia qualquer",
+      "cpf": "11111111111",
+      "telefone": "11111111",
+      "id": 2
+    },
+    {
+      "nome": "Cliente teste contador",
+      "genero": "F",
+      "dataNascimento": "1970-01-01",
+      "biografia": "Biografia qualquer",
+      "cpf": "12345678890",
+      "telefone": "123434344",
+      "id": 3
+    }
+  ],
+  "passagens": [
+    {
+      "tipo": "economica",
+      "dataIda": "2023-06-30",
+      "dataVolta": "2023-07-31",
+      "origem": "Cocal do sul",
+      "destino": "Itália",
+      "id": 1
+    },
+    {
+      "tipo": "executiva",
+      "dataIda": "2023-06-01",
+      "dataVolta": "2023-07-01",
+      "origem": "Brasil",
+      "destino": "EUA",
+      "id": 2
+    }
+  ],
+  "pacotes": [
+    {
+      "cliente": {
+        "id": 1,
+        "descricao": "João"
+      },
+      "passagem": {
+        "id": 1,
+        "destino": "destino qualquer"
+      },
+      "roteiro": "Viagem para conhecer a estátua da Julieta - Itália",
+      "valor": "20,00",
+      "agente": "carlos",
+      "id": 1
+    },
+    {
+      "cliente": {
+        "nome": "João",
+        "genero": "M",
+        "dataNascimento": "1970-01-01",
+        "biografia": "Biografia qualquer",
+        "cpf": "11111111111",
+        "telefone": "11111111",
+        "id": 2
+      },
+      "passagem": {
+        "tipo": "economica",
+        "dataIda": "1970-01-01",
+        "dataVolta": "1970-01-01",
+        "origem": "Criciúma",
+        "destino": "Itália",
+        "id": 1
+      },
+      "roteiro": "Viagem para passear",
+      "valor": "10.0",
+      "agente": "maria",
+      "id": 2
+    },
+    {
+      "cliente": {
+        "id": 1,
+        "nome": "Nome teste nome",
+        "genero": "F",
+        "dataNascimento": "1970-01-01",
+        "cpf": "11111111111",
+        "telefone": "48996702055"
+      },
+      "passagem": {
+        "tipo": "economica",
+        "dataIda": "2023-06-30",
+        "dataVolta": "2023-07-31",
+        "origem": "Criciúma",
+        "destino": "Itália",
+        "id": 1
+      },
+      "roteiro": "Roteiro apresentação",
+      "valor": "20",
+      "agente": "maria",
+      "id": 3
+    }
+  ]
+}

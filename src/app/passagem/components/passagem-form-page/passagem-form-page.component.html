@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      {{createMode ? 'Cadastro ' : 'Edição ' }} de Passagem
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="passagemForm">
+    <ion-list>
+      <ion-item>
+          <ion-label>Tipo passagem</ion-label>
+          <ion-select formControlName="tipo" placeholder="Selecione o tipo da passagem">
+            <ion-select-option value="X">Executiva</ion-select-option>
+            <ion-select-option value="C">Economica</ion-select-option>
+          </ion-select>
+        </ion-item>
+      <ion-item>
+        <ion-label> Data de ida </ion-label>
+        <ion-datetime-button datetime="dataIda"></ion-datetime-button>
+        <ion-modal [keepContentsMounted]="true">
+          <ng-template>
+            <ion-datetime formControlName="dataIda" id="dataIda" presentation="date" showDefaultButtons="true"
+              doneText="Selecionar" cancelText="Cancelar" showDefaultTitle="true">
+              <span slot="title">Selecione a data de ida</span>
+            </ion-datetime>
+          </ng-template>
+        </ion-modal>
+      </ion-item>
+      <ion-item>
+          <ion-label> Data de volta </ion-label>
+          <ion-datetime-button datetime="dataVolta"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime formControlName="dataVolta" id="dataVolta" presentation="date" showDefaultButtons="true"
+                doneText="Selecionar" cancelText="Cancelar" showDefaultTitle="true">
+                <span slot="title">Selecione a data de volta</span>
+              </ion-datetime>
+            </ng-template>
+          </ion-modal>
+        </ion-item>
+      <ion-item>
+        <ion-label position="floating">Origem:</ion-label>
+        <ion-input formControlName="origem" placeholder="Digite a origem da passagem"></ion-input>
+        <ion-note slot="error" *ngIf="passagemForm.controls['origem'].hasError('required')">
+          O campo é obrigatório
+        </ion-note>
+        <ion-note slot="error" *ngIf="passagemForm.controls['origem'].hasError('minlength')">
+          O campo tem {{passagemForm.controls['origem'].errors?.['minlength'].actualLength}} caracteres, entretanto deve
+          ter no mínimo {{passagemForm.controls['origem'].errors?.['minlength'].requiredLength}} caracteres
+        </ion-note>
+        <ion-note slot="error" *ngIf="passagemForm.controls['origem'].hasError('maxlength')">
+          O campo deve ter no máximo {{passagemForm.controls['origem'].errors?.['maxlength'].requiredLength}} caracteres
+        </ion-note>
+        <ion-note slot="error" *ngIf="passagemForm.controls['origem'].hasError('invalidOrigem')">
+          A origem da passagem não pode conter o trecho de caracteres:
+          <strong>{{passagemForm.controls['origem'].errors?.['invalidOrigem']}}</strong>
+        </ion-note>
+       
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Destino:</ion-label>
+        <ion-input formControlName="destino" placeholder="Digite o destino da passagem"></ion-input>
+        <ion-note slot="error" *ngIf="passagemForm.controls['destino'].hasError('required')">
+          O campo é obrigatório
+        </ion-note>
+        <ion-note slot="error" *ngIf="passagemForm.controls['destino'].hasError('minlength')">
+          O campo tem {{passagemForm.controls['destino'].errors?.['minlength'].actualLength}} caracteres, entretanto deve
+          ter no mínimo {{passagemForm.controls['destino'].errors?.['minlength'].requiredLength}} caracteres
+        </ion-note>
+        <ion-note slot="error" *ngIf="passagemForm.controls['destino'].hasError('maxlength')">
+          O campo deve ter no máximo {{passagemForm.controls['destino'].errors?.['maxlength'].requiredLength}} caracteres
+        </ion-note>
+        <ion-note slot="error" *ngIf="passagemForm.controls['destino'].hasError('invalidDestino')">
+          O destino da passagem não pode conter o trecho de caracteres:
+          <strong>{{passagemForm.controls['destino'].errors?.['invalidDestino']}}</strong>
+        </ion-note>
+       
+      </ion-item>
+    </ion-list>
+    <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+      <ion-fab-button (click)="save()" [disabled]="passagemForm.invalid">
+        <ion-icon name="checkmark"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-fab horizontal="start" vertical="bottom" slot="fixed">
+      <ion-fab-button color="light" (click)="cancel()">
+        <ion-icon name="close"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </form>
+</ion-content>
+
+<ion-footer>
+
+</ion-footer>
